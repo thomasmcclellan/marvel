@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatTableDataSource, MatSort } from '@angular/material';
 
 export interface SpideyModel {
   issue: number,
@@ -29,7 +30,11 @@ const fakeData: SpideyModel[] = [
 export class AppComponent implements OnInit {
   title = 'The Ultimate Spiderman!';
   displayedColumns: string[] = ['issue', 'title', 'details']
-  dataSource = fakeData
+  dataSource = new MatTableDataSource(fakeData)
 
-  ngOnInit() { }
+  @ViewChild(MatSort) sort: MatSort
+
+  ngOnInit() { 
+    this.dataSource.sort = this.sort
+  }
 }

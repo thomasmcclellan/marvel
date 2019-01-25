@@ -1,49 +1,29 @@
 <h1 style="text-align: center">{{ title }}</h1>
 
 <div style="text-align: center">
-  <table 
+  <mat-table 
     style="margin: auto" 
-    mat-table
     [dataSource]="dataSource"
     class="mat-elevation-z8"
+    matSort
   >
-    <ng-container matColumnDef="issue">
-      <th 
-        mat-header-cell 
+    <ng-container 
+      *ngFor="let column of displayedColumns"
+      matColumnDef="{{ column }}">
+      <mat-header-cell 
         *matHeaderCellDef
-      >Issue Number</th>
-      <td 
-        matt-cell 
+        mat-sort-header
+      >{{ column }}</mat-header-cell>
+      <mat-cell 
         *matCellDef="let element"
-      >{{ element.issue }}</td>
+      >{{ element[column] }}</mat-cell>
     </ng-container>
-    <ng-container matColumnDef="title">
-      <th 
-        mat-header-cell 
-        *matHeaderCellDef
-      >Title</th>
-      <td 
-        matt-cell 
-        *matCellDef="let element"
-      >{{ element.title }}</td>
-    </ng-container>
-    <ng-container matColumnDef="details">
-      <th 
-        mat-header-cell 
-        *matHeaderCellDef
-      >Details</th>
-      <td 
-        matt-cell 
-        *matCellDef="let element"
-      >{{ element.details }}</td>
-    </ng-container>
-    <tr 
-      mat-header-row 
+
+    <mat-header-row 
       *matHeaderRowDef="displayedColumns"
-    ></tr>
-    <tr 
-      mat-row 
+    ></mat-header-row>
+    <mat-row 
       *matRowDef="let row, columns: displayedColumns"
-    ></tr>
-  </table>
+    ></mat-row>
+  </mat-table>
 </div>  
