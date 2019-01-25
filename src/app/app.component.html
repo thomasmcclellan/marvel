@@ -7,16 +7,35 @@
     class="mat-elevation-z8"
     matSort
   >
-    <ng-container 
-      *ngFor="let column of displayedColumns"
-      matColumnDef="{{ column }}">
+    <ng-container matColumnDef="issue">
       <mat-header-cell 
         *matHeaderCellDef
         mat-sort-header
-      >{{ column }}</mat-header-cell>
+      >Issue</mat-header-cell>
       <mat-cell 
         *matCellDef="let element"
-      >{{ element[column] }}</mat-cell>
+      >{{ element.issue }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="title">
+      <mat-header-cell 
+        *matHeaderCellDef
+        mat-sort-header
+      >Title</mat-header-cell>
+      <mat-cell 
+        *matCellDef="let element"
+      >{{ element.title }}</mat-cell>
+    </ng-container>
+
+    <ng-container 
+      matColumnDef="details">
+      <mat-header-cell 
+        *matHeaderCellDef
+        mat-sort-header
+      >Details</mat-header-cell>
+      <mat-cell 
+        *matCellDef="let element"
+      ><button mat-button color="warn">Learn More</button></mat-cell>
     </ng-container>
 
     <mat-header-row 
