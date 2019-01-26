@@ -1,21 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppComponent } from './app.component';
-import { MatButtonModule, MatSortModule, MatTableModule } from '@angular/material';
+import { AppComponent, DialogData } from './app.component';
+import { ModalComponent } from './modal/modal.component';
+import { 
+  MatButtonModule, 
+  MatSortModule, 
+  MatTableModule, 
+  MatDialogModule 
+} from '@angular/material';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ModalComponent,
   ],
+  entryComponents: [ModalComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatSortModule, 
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

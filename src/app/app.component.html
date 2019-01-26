@@ -35,7 +35,11 @@
       >Details</mat-header-cell>
       <mat-cell 
         *matCellDef="let element"
-      ><button mat-button color="warn">Learn More</button></mat-cell>
+      ><button 
+        mat-button 
+        color="warn"
+        (click)="openDialog(element)"
+      >Learn More</button></mat-cell>
     </ng-container>
 
     <mat-header-row 
