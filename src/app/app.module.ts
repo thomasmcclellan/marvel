@@ -9,6 +9,8 @@ import {
   MatTableModule, 
   MatDialogModule 
 } from '@angular/material';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { SpideyService } from './spidey.service';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,10 @@ import {
     MatButtonModule,
     MatSortModule, 
     MatTableModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
+  providers: [HttpClient, SpideyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

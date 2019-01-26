@@ -1,16 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource, MatSort, MatDialog } from '@angular/material';
 import { ModalComponent } from './modal/modal.component';
+import { SpideyService } from './spidey.service';
 
 export interface SpideyModel {
   issue: number,
   title: string,
   something: string,
   somethingElse: string
-}
-
-export interface DialogData {
-  animal: 'panda' | 'unicorn' | 'lion'
 }
 
 const fakeData: SpideyModel[] = [
@@ -35,20 +32,37 @@ const fakeData: SpideyModel[] = [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'The Ultimate Spiderman!';
-  displayedColumns: string[] = ['issue', 'title', 'details']
-  dataSource = new MatTableDataSource(fakeData)
+  title: string = 'The Ultimate Spiderman!';
+  displayedColumns: string[] = ['issue', 'name', 'details']
+  spideyData: Array<any> = []
+  dataSource = new MatTableDataSource(this.spideyData)
 
-  constructor(public dialog: MatDialog) { }
+  constructor(private _dialog: MatDialog, private _spideyService: SpideyService) { }
 
   @ViewChild(MatSort) sort: MatSort
 
   ngOnInit() { 
+    this.onGetFirstSpidey()    
+    // this.onGetSecondSpidey()    
     this.dataSource.sort = this.sort
   }
 
+  onGetFirstSpidey() : void {
+    this._spideyService.getSpidey1().subscribe(Spidey => {
+      this.spideyData = Spidey.data.results[0].comics.items
+      console.log(this.spideyData)
+    })
+  }
+
+  // onGetSecondSpidey() : void {
+  //   this._spideyService.getSpidey2().subscribe(Spidey => {
+  //     this.spideyData = Spidey.data.results[0]
+  //     console.log(this.spideyData)
+  //   })
+  // }
+
   openDialog(element) {
-    this.dialog.open(ModalComponent, { data: element })
+    this._dialog.open(ModalComponent, { data: element })
     console.log(element)
   }
 }
