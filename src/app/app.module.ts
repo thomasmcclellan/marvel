@@ -1,16 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppComponent, DialogData } from './app.component';
+import { AppComponent } from './app.component';
 import { ModalComponent } from './modal/modal.component';
-import { 
-  MatButtonModule, 
-  MatSortModule, 
-  MatTableModule, 
-  MatDialogModule 
-} from '@angular/material';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SpideyService } from './spidey.service';
+import { MarvelInterceptor } from './marvel.interceptor';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -21,13 +17,18 @@ import { SpideyService } from './spidey.service';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatSortModule, 
-    MatTableModule,
-    MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule
   ],
-  providers: [HttpClient, SpideyService],
+  providers: [
+    HttpClient, 
+    SpideyService, 
+    { 
+      provide: HTTP_INTERCEPTORS, 
+      useClass: MarvelInterceptor, 
+      multi: true 
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

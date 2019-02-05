@@ -7,13 +7,11 @@ import { MAT_DIALOG_DATA } from '@angular/material';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
-  _element: object = {}
+  _deets: object = {}
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit() {
-    this._element = this.data
-    console.log(this._element)
+    this._deets = this.data
   }
-
 }
