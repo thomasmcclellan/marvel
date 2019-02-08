@@ -1,5 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe|Amatic+SC|Permanent+Marker');
+
 mat-table {
-  overflow: auto;
-  max-height: 70vh;
+  font-family: var(--font2);
+  font-weight: bold;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+mat-header-cell {
+  font-size: 22pt;
+  color: red;
+  font-family: var(--font1);
+}
+
+mat-cell {
+  font-size: 18pt;
+  color: blue;
+}
+
+h1 {
+  font-family: var(--font1);
+  color: yellow;
+  /* text-shadow: 2px 2px 2px yellow; */
+  font-weight: bold;
+  font-size: 30pt;
+}
+
+button, mat-paginator {
+  font-family: var(--font3);
+}
+
+mat-paginator {
+  background: rgba(0, 0, 255, 0.5);
+  color: yellow;
+}
+
+#spideyTable {
   width: 40vw;
+  margin: auto;
 }

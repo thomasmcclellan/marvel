@@ -4,14 +4,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ModalComponent } from './modal/modal.component';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { SpideyService } from './spidey.service';
+import { MarvelService } from './marvel.service';
 import { MarvelInterceptor } from './marvel.interceptor';
 import { MaterialModule } from './material/material.module';
+import { BackgroundSizeDirective } from './background-size.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModalComponent,
+    BackgroundSizeDirective,
   ],
   entryComponents: [ModalComponent],
   imports: [
@@ -22,7 +24,7 @@ import { MaterialModule } from './material/material.module';
   ],
   providers: [
     HttpClient, 
-    SpideyService, 
+    MarvelService, 
     { 
       provide: HTTP_INTERCEPTORS, 
       useClass: MarvelInterceptor, 

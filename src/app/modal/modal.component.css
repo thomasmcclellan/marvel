@@ -1,4 +1,31 @@
-.modContent {
-  display: inline-block;
-  width: 50%;
+h1 {
+  font-family: var(--font1);
+  font-weight: bold;
+  color: blue;
+  text-align: center;
+}
+
+h4 {
+  font-family: var(--font2);
+  font-weight: bold;
+  font-size: 22pt;
+  color: red;
+}
+
+p {
+  font-family: var(--font3);
+}
+
+#modContent {
+  background-size: cover;
+}
+
+.info {
+  border: 2px solid #fff;
+  border-radius: 0.4em;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 0.6px;
+  text-align: center;
+  margin: 0.5em auto;
+  padding: 0.5em;
 }

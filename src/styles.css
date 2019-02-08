@@ -1,1 +1,13 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+:root {
+  --font1: 'ZCOOL KuaiLe', cursive;
+  --font2: 'Amatic SC', cursive;
+  --font3: 'Permanent Marker', cursive;
+}
+
+body {
+  background: url('https://images3.alphacoders.com/669/thumb-1920-669931.jpg') no-repeat right center;
+  background-size: cover;
+  height: 96vh;
+}

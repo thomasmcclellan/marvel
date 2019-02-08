@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SpideyService } from './spidey.service';
+import { MarvelService } from './marvel.service';
 
-describe('SpideyService', () => {
+describe('MarvelService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: SpideyService = TestBed.get(SpideyService);
+    const service: MarvelService = TestBed.get(MarvelService);
     expect(service).toBeTruthy();
   });
 });
