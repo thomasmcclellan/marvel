@@ -8,12 +8,14 @@ import { MarvelService } from './marvel.service';
 import { MarvelInterceptor } from './marvel.interceptor';
 import { MaterialModule } from './material/material.module';
 import { BackgroundSizeDirective } from './background-size.directive';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModalComponent,
     BackgroundSizeDirective,
+    NavbarComponent,
   ],
   entryComponents: [ModalComponent],
   imports: [

@@ -11,12 +11,12 @@ import { environment } from '../environments/environment.prod';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title: string = 'fantastic four'.toUpperCase()
+  title: string = 'incredible hulk'.toUpperCase()
   displayedColumns: string[] = ['name', 'details']
   spideyData: TableModel[] = []
   dataSource: any
   pageSizeOptions: number[] = [10]
-  
+
   constructor(
     private _dialog: MatDialog,
     private _marvelService: MarvelService
