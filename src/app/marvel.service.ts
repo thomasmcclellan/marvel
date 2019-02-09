@@ -13,12 +13,12 @@ export class MarvelService {
 
   constructor(private _http: HttpClient) { }
 
-  getSpidey(apiName: string) : Observable<TableModel> { 
+  getSuper(apiName: string) : Observable<TableModel> { 
       // return this._http.get<TableModel>(`${this._baseUrl}${apiId}`)
       return this._http.get<TableModel>(`${this._baseUrl}${apiName}`)
   }
 
-  getSpideyDeets(deetsUrl) : Observable<DeetsModel> {
+  getSuperDeets(deetsUrl) : Observable<DeetsModel> {
     return this._http.get<DeetsModel>(deetsUrl)
   }
 }

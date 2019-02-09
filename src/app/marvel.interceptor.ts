@@ -12,9 +12,9 @@ export class MarvelInterceptor implements HttpInterceptor {
     
     const creds = req.clone({
       params: req.params
-        .set('ts', Credentials.ts)
+        // .set('ts', Credentials.ts)
         .set('apikey', Credentials.publicKey)
-        .set('hash', Credentials.hash)
+        // .set('hash', Credentials.hash)
     })
     return next.handle(creds)
   }

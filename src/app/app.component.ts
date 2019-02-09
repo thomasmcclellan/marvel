@@ -3,7 +3,6 @@ import { MatTableDataSource, MatSort, MatDialog, MatPaginator } from '@angular/m
 import { ModalComponent } from './modal/modal.component';
 import { MarvelService } from './marvel.service';
 import { TableModel } from './table.model';
-import { environment } from '../environments/environment.prod';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +10,7 @@ import { environment } from '../environments/environment.prod';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title: string = 'incredible hulk'.toUpperCase()
+  title: string =  'Spider-Man'.toUpperCase()
   displayedColumns: string[] = ['name', 'details']
   spideyData: TableModel[] = []
   dataSource: any
@@ -26,25 +25,18 @@ export class AppComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator
   
   ngOnInit() { 
-    this.onGetFirstSpidey()  
-    console.log(environment.creds)
+    this.onGetSuper(this.title)  
   }
   
-  // onGetFirstSpidey() : void {
-  //   this._marvelService.getSpidey(466)
-  //   .subscribe(Spidey => {
-  //     this.spideyData = Spidey['data'].results[0].comics.items
-  //     this.dataSource = new MatTableDataSource(this.spideyData)
-  //     this.dataSource.sort = this.sort
-  //     this.dataSource.paginator = this.paginator
-  //     this.title = Spidey['data'].results[0].title.toUpperCase()
-  //     }
-  //   )
-  // }
+  onSetTitle(title: string) : void {
+    this.title = title.toUpperCase()
+    this.onGetSuper(title)  
+  }
 
-  onGetFirstSpidey() : void {
-    this._marvelService.getSpidey(this.title.toLowerCase())
+  onGetSuper(hero: string) : void {
+    this._marvelService.getSuper(hero.toLowerCase())
     .subscribe(Spidey => {
+      this.spideyData = []
       for (let data of Spidey['data'].results) {
         for (let comic of data.comics.items) {
           this.spideyData.push(comic)
@@ -57,10 +49,13 @@ export class AppComponent implements OnInit {
     )
   }
 
-  openDialog(element) {
-    this._marvelService.getSpideyDeets(element.resourceURI)
+  openDialog(selectedComic) {
+    this._marvelService.getSuperDeets(selectedComic.resourceURI)
       .subscribe(Deets => {
-        this._dialog.open(ModalComponent, { data: Deets['data'].results[0], width: '40vw' })
+        this._dialog.open(ModalComponent, { 
+          data: Deets['data'].results[0], 
+          width: '40vw' 
+        })
       }
     )
   }

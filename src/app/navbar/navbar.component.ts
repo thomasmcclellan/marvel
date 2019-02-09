@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  @Output() 
+  onSuperSelected = new EventEmitter<string>()
+  
+  supers: string[] = ['Spider-Man', 'X-Men', 'Captain America', 'Iron Man', 'Fantastic Four', 'Black Widow', 'Incredible Hulk', 'Black Panther']
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  pickSuper(title: string) : void {
+    // console.log(title)
+    this.onSuperSelected.emit(title)
   }
 
 }
