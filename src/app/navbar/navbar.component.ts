@@ -9,7 +9,7 @@ export class NavbarComponent implements OnInit {
   @Output() 
   onSuperSelected = new EventEmitter<string>()
   
-  supers: string[] = ['Spider-Man', 'X-Men', 'Captain America', 'Iron Man', 'Fantastic Four', 'Black Widow', 'Incredible Hulk', 'Black Panther']
+  supers: string[] = ['Spider-Man', 'X-Men', 'Captain America', 'Iron Man', 'Fantastic Four', 'Hulk', 'Black Panther']
 
   constructor() { }
 
@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
   }
 
   pickSuper(title: string) : void {
-    // console.log(title)
+    console.log(title)
     this.onSuperSelected.emit(title)
   }
 

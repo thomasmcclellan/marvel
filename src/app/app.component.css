@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe|Amatic+SC|Permanent+Marker');
-
 mat-table {
-  font-family: var(--font2);
+  font-family: var(--comicFont);
   font-weight: bold;
   width: 100%;
   background: rgba(255, 255, 255, 0.5);
@@ -10,16 +8,16 @@ mat-table {
 mat-header-cell {
   font-size: 22pt;
   color: red;
-  font-family: var(--font1);
+  font-family: var(--spideyFont);
 }
 
 mat-cell {
-  font-size: 18pt;
+  font-size: 14pt;
   color: blue;
 }
 
 h1 {
-  font-family: var(--font1);
+  font-family: var(--spideyFont);
   color: yellow;
   /* text-shadow: 2px 2px 2px yellow; */
   font-weight: bold;
@@ -27,12 +25,17 @@ h1 {
 }
 
 button, mat-paginator {
-  font-family: var(--font3);
+  font-family: var(--comicFont);
+}
+
+button {
+  font-size: 14pt;
 }
 
 mat-paginator {
   background: rgba(0, 0, 255, 0.5);
   color: yellow;
+  font-size: 12pt;
 }
 
 #spideyTable {

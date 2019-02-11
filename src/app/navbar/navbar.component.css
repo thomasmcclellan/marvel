@@ -1,7 +1,55 @@
+mat-toolbar {
+  background: linear-gradient(to right, #e3e3e3, #808080)
+}
+
 button {
   margin-left: 1em;
+  font-size: 16pt;
 }
 
 .spacer {
   flex: 1 1 auto;
+}
+
+#S {
+  font-family: var(--spideyFont);
+  color: var(--spideyRed);
+  font-weight: bold;
+}
+
+#X {
+  font-family: var(--xFont);
+  color: var(--xBlue);
+  text-shadow: 1px 1px 0 var(--xYellow);
+}
+
+#C {
+  font-family: var(--captainFont);
+  color: var(--captainBlue);
+}
+
+#I {
+  font-family: var(--ironFont);
+  color: var(--ironRed); 
+  text-shadow:
+    -0.5px -0.5px 0 var(--ironYellow),
+    0.5px -0.5px 0 var(--ironYellow),
+    -0.5px 0.5px 0 var(--ironYellow),
+    0.5px 0.5px 0 var(--ironYellow); 
+}
+
+#F {
+  font-family: var(--fantasticFont);
+  color: var(--fantasticBlue); 
+}
+
+#H {
+  font-family: var(--hulkFont);
+  color: var(--hulkGreen); 
+}
+
+#B {
+  font-family: var(--pantherFont);
+  color: var(--pantherPurple); 
+  text-shadow: 1px 1px 1px var(--pantherBlack);
 }

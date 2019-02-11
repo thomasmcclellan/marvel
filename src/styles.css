@@ -1,9 +1,37 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe|Anton|Staatliches|Audiowide|Squada+One|Bangers|Sigmar+One|Permanent+Marker|Patrick+Hand+SC');
 
 :root {
-  --font1: 'ZCOOL KuaiLe', cursive;
-  --font2: 'Amatic SC', cursive;
-  --font3: 'Permanent Marker', cursive;
+  --comicFont: 'Patrick Hand SC', cursive;
+  --spideyFont: 'ZCOOL KuaiLe', cursive;
+  --xFont: 'Staatliches', cursive;
+  --captainFont: 'Anton', sans-serif;
+  --ironFont: 'Audiowide', cursive;
+  --fantasticFont: 'Squada One', cursive;
+  --hulkFont: 'Sigmar One', cursive;
+  --pantherFont: 'Bangers', cursive;
+
+  --spideyRed: #e81b24;
+  --spideyBlue: #037ecd;
+  --spideyYellow: #f0f11e;
+  --xBlue: #297fbe;
+  --xYellow: #f0f11e;
+  --xRed: #af0c10;
+  --captainRed: #dc3627;
+  --captainWhite: #f7f7f7;
+  --captainBlue: #04a7dd;
+  --ironRed: #cf3722;
+  --ironYellow: #efdb55;
+  --ironBlue: #70baca;
+  --fantasticBlue: #037ecd;
+  --fantasticRed: #e81b24;
+  --fantasticWhite: #eaebed;
+  --hulkGreen: #039a3e;
+  --hulkPurple: #ae1e89;
+  --hulkYellow: #f6e902;
+  --pantherBlack: #060709;
+  --pantherPurple: #4d4888;
+  --pantherRed: #8b010a;
 }
 
 body {

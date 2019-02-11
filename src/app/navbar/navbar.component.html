@@ -1,52 +1,12 @@
 <mat-toolbar>
   <mat-toolbar-row>
-    <span>Marvel</span>
+    <img src="../../assets/logo/logo.png" width="120" alt="">
     <span class="spacer"></span>
-    <!-- <button 
-      mat-raised-button 
-      color="warn"
-      (click)=""
-    >Spider-Man</button>
-    <button 
-      mat-raised-button 
-      color="warn"
-      (click)=""
-    >X-Men</button>
-    <button 
-      mat-raised-button 
-      color="warn"
-      (click)=""
-    >Captain America</button>
-    <button 
-      mat-raised-button 
-      color="warn"
-      (click)=""
-    >Iron Man</button>
-    <button 
-      mat-raised-button 
-      color="warn"
-      (click)=""
-    >Fantastic Four</button>
-    <button 
-      mat-raised-button 
-      color="warn"
-      (click)=""
-    >Black Widow</button>
-    <button 
-      mat-raised-button 
-      color="warn"
-      (click)=""
-    >Incredible Hulk</button>
-    <button 
-      mat-raised-button 
-      color="warn"
-      (click)=""
-    >Black Panther</button> -->
-
     <button 
       *ngFor="let super of supers"
       (click)="pickSuper($event.target.innerText)"
-      mat-raised-button 
+      mat-button 
+      id="{{ super[0] }}"
     >{{ super }}</button>
   </mat-toolbar-row>
 </mat-toolbar>
