@@ -1,12 +1,12 @@
-<h1 mat-dialog-title>{{ _deets.title }}</h1>
+<h1 mat-dialog-title class="{{ _deets.title[0] }}">{{ _deets.title }}</h1>
 <div mat-dialog-content [ngStyle]="{ background: onGetBackground(), backgroundSize: cover }" id="modContent">
   <p class="info">{{ _deets.description }}</p>
   <div class="info">
-    <h4>Caracters:</h4>
+    <h4 class="{{ _deets.title[0] }}">Caracters:</h4>
     <span><p *ngFor="let character of _deets.characters.items">{{ character.name }}</p></span>
   </div>
   <div class="info">
-    <h4>Creators:</h4>
+    <h4 class="{{ _deets.title[0] }}">Creators:</h4>
     <p *ngFor="let creator of _deets.creators.items">{{ creator.name }}</p>
   </div>
 </div>

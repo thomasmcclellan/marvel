@@ -1,15 +1,84 @@
 h1 {
-  font-family: var(--spideyFont);
   font-weight: bold;
-  color: blue;
   text-align: center;
 }
 
-h4 {
+h1.S {
   font-family: var(--spideyFont);
+  color: var(--spideyBlue);
+}
+
+h1.X {
+  font-family: var(--xFont);
+  color: var(--xBlue);
+  text-shadow: var(--xShadow);
+}
+
+h1.C {
+  font-family: var(--captainFont);
+  color: var(--captainBlue);
+}
+
+h1.I {
+  font-family: var(--ironFont);
+  color: var(--ironRed);
+  text-shadow: var(--ironOutline);
+}
+
+h1.F {
+  font-family: var(--fantasticFont);
+  color: var(--fantasticBlue);
+}
+
+h1.H {
+  font-family: var(--hulkFont);
+  color: var(--hulkGreen);
+}
+
+h1.B {
+  font-family: var(--pantherFont);
+  color: var(--pantherPurple);
+  text-shadow: var(--pantherShadow);
+}
+
+h4 {
   font-weight: bold;
   font-size: 16pt;
-  color: red;
+}
+
+h4.S {
+  font-family: var(--spideyFont);
+  color: var(--spideyRed);
+}
+
+h4.X {
+  font-family: var(--xFont);
+  color: var(--xRed);
+}
+
+h4.C {
+  font-family: var(--captainFont);
+  color: var(--captainRed);
+}
+
+h4.I {
+  font-family: var(--ironFont);
+  color: var(--ironBlue);
+}
+
+h4.F {
+  font-family: var(--fantasticFont);
+  color: var(--fantasticRed);
+}
+
+h4.H {
+  font-family: var(--hulkFont);
+  color: var(--hulkPurple);
+}
+
+h4.B {
+  font-family: var(--pantherFont);
+  color: var(--pantherRed);
 }
 
 p {

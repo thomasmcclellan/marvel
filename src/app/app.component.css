@@ -7,21 +7,116 @@ mat-table {
 
 mat-header-cell {
   font-size: 22pt;
-  color: red;
+}
+
+mat-header-cell.S {
+  color: var(--spideyRed);
   font-family: var(--spideyFont);
+}
+
+mat-header-cell.X {
+  color: var(--xBlue);
+  font-family: var(--xFont);
+}
+
+mat-header-cell.C {
+  color: var(--captainBlue);
+  font-family: var(--captainFont);
+}
+
+mat-header-cell.I {
+  color: var(--ironRed);
+  font-family: var(--ironFont);
+}
+
+mat-header-cell.F {
+  color: var(--fantasticBlue);
+  font-family: var(--fantasticFont);
+}
+
+mat-header-cell.H {
+  color: var(--hulkGreen);
+  font-family: var(--hulkFont);
+}
+
+mat-header-cell.B {
+  color: var(--pantherPurple);
+  font-family: var(--pantherFont);
 }
 
 mat-cell {
   font-size: 14pt;
-  color: blue;
+}
+
+mat-cell.S {
+  color: var(--spideyBlue);
+}
+
+mat-cell.X {
+  color: var(--xRed);
+}
+
+mat-cell.C {
+  color: var(--captainRed);
+}
+
+mat-cell.I {
+  color: var(--ironBlue);
+}
+
+mat-cell.F {
+  color: var(--fantasticRed);
+}
+
+mat-cell.H {
+  color: var(--hulkPurple);
+}
+
+mat-cell.B {
+  color: var(--pantherRed);
 }
 
 h1 {
-  font-family: var(--spideyFont);
-  color: yellow;
-  /* text-shadow: 2px 2px 2px yellow; */
   font-weight: bold;
   font-size: 30pt;
+}
+
+h1.S {
+  font-family: var(--spideyFont);
+  color: var(--spideyYellow);
+}
+
+h1.X {
+  font-family: var(--xFont);
+  color: var(--xBlue);
+  text-shadow: var(--xShadow);
+}
+
+h1.C {
+  font-family: var(--captainFont);
+  color: var(--captainRed);
+}
+
+h1.I {
+  font-family: var(--ironFont);
+  color: var(--ironRed);
+  text-shadow: var(--ironOutline);
+}
+
+h1.F {
+  font-family: var(--fantasticFont);
+  color: var(--fantasticBlue);
+}
+
+h1.H {
+  font-family: var(--hulkFont);
+  color: var(--hulkGreen);
+}
+
+h1.B {
+  font-family: var(--pantherFont);
+  color: var(--pantherPurple);
+  text-shadow: var(--pantherShadow);
 }
 
 button, mat-paginator {
@@ -33,12 +128,39 @@ button {
 }
 
 mat-paginator {
-  background: rgba(0, 0, 255, 0.5);
-  color: yellow;
   font-size: 12pt;
+  font-weight: bold;
 }
 
-#spideyTable {
+mat-paginator.S {
+  color: var(--spideyYellow);
+}
+
+mat-paginator.X {
+  color: var(--xYellow);
+}
+
+mat-paginator.C {
+  color: var(--captainWhite);
+}
+
+mat-paginator.I {
+  color: var(--ironYellow);
+}
+
+mat-paginator.F {
+  color: var(--fantasticWhite);
+}
+
+mat-paginator.H {
+  color: var(--hulkYellow);
+}
+
+mat-paginator.B {
+  color: var(--pantherBlack);
+}
+
+#table {
   width: 40vw;
   margin: auto;
 }

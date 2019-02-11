@@ -32,6 +32,14 @@
   --pantherBlack: #060709;
   --pantherPurple: #4d4888;
   --pantherRed: #8b010a;
+
+  --xShadow: 1px 1px 0 var(--xYellow);
+  --ironOutline: 
+    -0.5px -0.5px 0 var(--ironYellow),
+    0.5px -0.5px 0 var(--ironYellow),
+    -0.5px 0.5px 0 var(--ironYellow),
+    0.5px 0.5px 0 var(--ironYellow);
+  --pantherShadow: 1px 1px 1px var(--pantherBlack);
 }
 
 body {
