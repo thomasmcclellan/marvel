@@ -25,7 +25,7 @@ mat-header-cell.C {
 }
 
 mat-header-cell.I {
-  color: var(--ironRed);
+  color: var(--ironBlue);
   font-family: var(--ironFont);
 }
 
@@ -61,7 +61,7 @@ mat-cell.C {
 }
 
 mat-cell.I {
-  color: var(--ironBlue);
+  color: var(--ironRed);
 }
 
 mat-cell.F {
@@ -73,7 +73,7 @@ mat-cell.H {
 }
 
 mat-cell.B {
-  color: var(--pantherRed);
+  color: var(--pantherBlack);
 }
 
 h1 {
@@ -105,12 +105,12 @@ h1.I {
 
 h1.F {
   font-family: var(--fantasticFont);
-  color: var(--fantasticBlue);
+  color: var(--fantasticWhite);
 }
 
 h1.H {
   font-family: var(--hulkFont);
-  color: var(--hulkGreen);
+  color: var(--hulkYellow);
 }
 
 h1.B {
@@ -149,15 +149,25 @@ mat-paginator.I {
 }
 
 mat-paginator.F {
-  color: var(--fantasticWhite);
+  color: var(--fantasticBlue);
 }
 
 mat-paginator.H {
-  color: var(--hulkYellow);
+  color: var(--hulkPurple);
 }
 
 mat-paginator.B {
-  color: var(--pantherBlack);
+  color: var(--pantherRed);
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  padding-top: 5em;
+  height: 100vh;
+  width: 100vw;
 }
 
 #table {

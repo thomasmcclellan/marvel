@@ -41,9 +41,3 @@
     0.5px 0.5px 0 var(--ironYellow);
   --pantherShadow: 1px 1px 1px var(--pantherBlack);
 }
-
-body {
-  background: url('https://images3.alphacoders.com/669/thumb-1920-669931.jpg') no-repeat right center;
-  background-size: cover;
-  height: 100vh;
-}

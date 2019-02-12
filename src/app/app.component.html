@@ -1,59 +1,61 @@
 <app-navbar (onSuperSelected)="onSetTitle($event)"></app-navbar>
-
-<h1 
-  style="text-align: center" 
-  class="{{ title[0] }}"
->{{ title }}</h1>
-
 <div 
-  class="mat-elevation-z8" 
-  id="table"
+  [ngStyle]="{ background: onSetBackground() }"
+  id="main" 
 >
-  <mat-table 
-    style="margin: auto" 
-    [dataSource]="dataSource"
-    class="mat-elevation-z8"
-    matSort
-  >
-    <ng-container matColumnDef="name">
-      <mat-header-cell 
-          *matHeaderCellDef
-          mat-sort-header
-          class="{{ title[0] }}"
-        >Name</mat-header-cell>
-        <mat-cell 
-          class="{{ title[0] }}"
-          *matCellDef="let element"
-        >{{ element.name }}</mat-cell>
-      </ng-container>
-      
-      <ng-container matColumnDef="details">
-        <mat-header-cell 
-          *matHeaderCellDef
-          class="{{ title[0] }}"
-        >Details</mat-header-cell>
-        <mat-cell 
-          class="{{ title[0] }}"
-          *matCellDef="let element"
-        ><button 
-          mat-button 
-          (click)="openDialog(element)"
-        >Learn More</button></mat-cell>
-    </ng-container>
-
-    <mat-header-row 
-      *matHeaderRowDef="displayedColumns"
-    ></mat-header-row>
-    <mat-row 
-      *matRowDef="let row, columns: displayedColumns"
-    ></mat-row>
-  </mat-table>
-  
-  <mat-paginator
+  <h1 
+    style="text-align: center" 
     class="{{ title[0] }}"
-    [pageSizeOptions]="pageSizeOptions"
-    showFirstLastButtons
-  ></mat-paginator>
+  >{{ title }}</h1>
+
+  <div 
+    class="mat-elevation-z8" 
+    id="table"
+  >
+    <mat-table 
+      style="margin: auto" 
+      [dataSource]="dataSource"
+      class="mat-elevation-z8"
+      matSort
+    >
+      <ng-container matColumnDef="name">
+        <mat-header-cell 
+            *matHeaderCellDef
+            mat-sort-header
+            class="{{ title[0] }}"
+          >Name</mat-header-cell>
+          <mat-cell 
+            class="{{ title[0] }}"
+            *matCellDef="let element"
+          >{{ element.name }}</mat-cell>
+        </ng-container>
+        
+        <ng-container matColumnDef="details">
+          <mat-header-cell 
+            *matHeaderCellDef
+            class="{{ title[0] }}"
+          >Details</mat-header-cell>
+          <mat-cell 
+            class="{{ title[0] }}"
+            *matCellDef="let element"
+          ><button 
+            mat-button 
+            (click)="openDialog(element)"
+          >Learn More</button></mat-cell>
+      </ng-container>
+
+      <mat-header-row 
+        *matHeaderRowDef="displayedColumns"
+      ></mat-header-row>
+      <mat-row 
+        *matRowDef="let row, columns: displayedColumns"
+      ></mat-row>
+    </mat-table>
+    
+    <mat-paginator
+      class="{{ title[0] }}"
+      [pageSizeOptions]="pageSizeOptions"
+      showFirstLastButtons
+    ></mat-paginator>
+  </div>
 </div>
-
-

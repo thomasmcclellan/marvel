@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { MatTableDataSource, MatSort, MatDialog, MatPaginator } from '@angular/material';
 import { ModalComponent } from './modal/modal.component';
 import { MarvelService } from './marvel.service';
@@ -10,6 +10,9 @@ import { TableModel } from './table.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+@Input()
+ngStyle: { [key: string]: string }
+
   title: string =  'Spider-Man'.toUpperCase()
   displayedColumns: string[] = ['name', 'details']
   spideyData: TableModel[] = []
@@ -31,6 +34,34 @@ export class AppComponent implements OnInit {
   onSetTitle(title: string) : void {
     this.title = title.toUpperCase()
     this.onGetSuper(title)  
+  }
+
+  onSetBackground() : string {
+    let background: string
+    switch (this.title.toLowerCase()) {
+      case 'spider-man': 
+        background = 'url(../assets/img/spidey.jpg) no-repeat right center / cover'
+        break
+      case 'x-men':
+        background = 'url(../assets/img/x.jpg) no-repeat center center / cover'
+        break
+      case 'captain america':
+        background = 'url(../assets/img/captain.jpg) no-repeat center center / cover'
+        break
+      case 'iron man':
+        background = 'url(../assets/img/iron.jpg) no-repeat center center / cover'
+        break
+      case 'fantastic four':
+        background = 'url(../assets/img/fantastic.jpg) no-repeat center center / cover'
+        break
+      case 'hulk':
+        background = 'url(../assets/img/hulk.jpg) no-repeat center 58% / cover'
+        break
+      case 'black panther':
+        background = 'url(../assets/img/panther.jpg) no-repeat center center / cover'
+        break
+    }
+    return background
   }
 
   onGetSuper(hero: string) : void {

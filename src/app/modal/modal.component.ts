@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Inject } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
@@ -7,16 +7,12 @@ import { MAT_DIALOG_DATA } from '@angular/material';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
-  @Input()
-  NgStyle: { [key: string] : string }
-  
   _deets: object = {}
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit() {
     this._deets = this.data
-    console.log(this._deets['characters'].items)
   }
 
   onGetBackground() {

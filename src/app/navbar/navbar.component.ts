@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
   }
 
   pickSuper(title: string) : void {
-    console.log(title)
+    // console.log(title)
     this.onSuperSelected.emit(title)
   }
 

@@ -7,6 +7,7 @@ export class BackgroundSizeDirective {
 
   constructor(private el: ElementRef) { 
     el.nativeElement.style.backgroundSize = 'cover'
+    console.log(el.nativeElement.style.backgroundSize)
   }
 
 }
