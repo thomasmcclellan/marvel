@@ -10,14 +10,11 @@ import { TableModel } from './table.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-@Input()
-ngStyle: { [key: string]: string }
-
   title: string =  'Spider-Man'.toUpperCase()
   displayedColumns: string[] = ['name', 'details']
-  spideyData: TableModel[] = []
+  superData: TableModel[] = []
   dataSource: any
-  pageSizeOptions: number[] = [10]
+  pageSizeOptions: number[] = [7]
 
   constructor(
     private _dialog: MatDialog,
@@ -66,14 +63,12 @@ ngStyle: { [key: string]: string }
 
   onGetSuper(hero: string) : void {
     this._marvelService.getSuper(hero.toLowerCase())
-    .subscribe(Spidey => {
-      this.spideyData = []
-      for (let data of Spidey['data'].results) {
-        for (let comic of data.comics.items) {
-          this.spideyData.push(comic)
-        }
-      }
-      this.dataSource = new MatTableDataSource(this.spideyData)
+    .subscribe(Super => {
+      this.superData = []
+
+      Super['data'].results.map(data => data.comics.items.map(comic => this.superData.push(comic)))
+
+      this.dataSource = new MatTableDataSource(this.superData)
       this.dataSource.sort = this.sort
       this.dataSource.paginator = this.paginator
       }
