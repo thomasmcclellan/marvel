@@ -15,7 +15,7 @@ export class ModalComponent implements OnInit {
     this._deets = this.data
   }
 
-  onGetBackground() {
+  onGetBackground() : string {
     return `url(${this._deets['thumbnail'].path}/portrait_incredible.jpg) no-repeat center center`
   }
 }

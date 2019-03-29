@@ -8,14 +8,12 @@ import { TableModel } from './table.model';
   providedIn: 'root'
 })
 export class MarvelService {
-  // private _baseUrl = `http://gateway.marvel.com/v1/public/series/`
   private _baseUrl = `https://gateway.marvel.com:443/v1/public/series?titleStartsWith=`
 
   constructor(private _http: HttpClient) { }
 
   getSuper(apiName: string) : Observable<TableModel> { 
-      // return this._http.get<TableModel>(`${this._baseUrl}${apiId}`)
-      return this._http.get<TableModel>(`${this._baseUrl}${apiName}`)
+    return this._http.get<TableModel>(`${this._baseUrl}${apiName}`)
   }
 
   getSuperDeets(deetsUrl) : Observable<DeetsModel> {

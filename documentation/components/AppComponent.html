@@ -1,0 +1,1220 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ultimate-spiderman documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ultimate-spiderman documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AppComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/app.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-root</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./app.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./app.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#dataSource">dataSource</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#pageSizeOptions">pageSizeOptions</a>
+                            </li>
+                            <li>
+                                <a href="#paginator">paginator</a>
+                            </li>
+                            <li>
+                                <a href="#sort">sort</a>
+                            </li>
+                            <li>
+                                <a href="#superData">superData</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onGetSuper">onGetSuper</a>
+                            </li>
+                            <li>
+                                <a href="#onSetBackground">onSetBackground</a>
+                            </li>
+                            <li>
+                                <a href="#onSetTitle">onSetTitle</a>
+                            </li>
+                            <li>
+                                <a href="#openDialog">openDialog</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_dialog: MatDialog, _marvelService: <a href="../injectables/MarvelService.html">MarvelService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/app.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_marvelService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/MarvelService.html" target="_self" >MarvelService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/app.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onGetSuper"></a>
+                        <span class="name">
+                            <b>
+                            onGetSuper
+                            </b>
+                            <a href="#onGetSuper"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>onGetSuper(hero: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/app.component.ts:64</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>hero</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onSetBackground"></a>
+                        <span class="name">
+                            <b>
+                            onSetBackground
+                            </b>
+                            <a href="#onSetBackground"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>onSetBackground()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/app.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onSetTitle"></a>
+                        <span class="name">
+                            <b>
+                            onSetTitle
+                            </b>
+                            <a href="#onSetTitle"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>onSetTitle(title: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/app.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>title</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="openDialog"></a>
+                        <span class="name">
+                            <b>
+                            openDialog
+                            </b>
+                            <a href="#openDialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>openDialog(selectedComic: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/app.component.ts:78</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>selectedComic</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataSource"></a>
+                        <span class="name">
+                            <b>
+                            dataSource</b>
+                            <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/app.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumns</b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;name&#x27;, &#x27;details&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/app.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageSizeOptions"></a>
+                        <span class="name">
+                            <b>
+                            pageSizeOptions</b>
+                            <a href="#pageSizeOptions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>number[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[7]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/app.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginator"></a>
+                        <span class="name">
+                            <b>
+                            paginator</b>
+                            <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatPaginator</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatPaginator)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/app.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sort"></a>
+                        <span class="name">
+                            <b>
+                            sort</b>
+                            <a href="#sort"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatSort</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatSort)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/app.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="superData"></a>
+                        <span class="name">
+                            <b>
+                            superData</b>
+                            <a href="#superData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/TableModel.html" target="_self" >TableModel[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/app.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title</b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;SPIDER-MAN&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { MatTableDataSource, MatSort, MatDialog, MatPaginator } from &#x27;@angular/material&#x27;;
+import { ModalComponent } from &#x27;./modal/modal.component&#x27;;
+import { MarvelService } from &#x27;./marvel.service&#x27;;
+import { TableModel } from &#x27;./table.model&#x27;;
+
+@Component({
+  selector: &#x27;app-root&#x27;,
+  templateUrl: &#x27;./app.component.html&#x27;,
+  styleUrls: [&#x27;./app.component.css&#x27;]
+})
+export class AppComponent implements OnInit {
+  title: string &#x3D;  &#x27;SPIDER-MAN&#x27;
+  displayedColumns: string[] &#x3D; [&#x27;name&#x27;, &#x27;details&#x27;]
+  superData: TableModel[] &#x3D; []
+  dataSource: any
+  pageSizeOptions: number[] &#x3D; [7]
+
+  constructor(
+    private _dialog: MatDialog,
+    private _marvelService: MarvelService
+  ) { }
+  
+  @ViewChild(MatSort) sort: MatSort
+  @ViewChild(MatPaginator) paginator: MatPaginator
+  
+  ngOnInit() { 
+    this.onGetSuper(this.title)  
+  }
+  
+  onSetTitle(title: string) : void {
+    this.title &#x3D; title.toUpperCase()
+    this.onGetSuper(title)  
+  }
+
+  onSetBackground() : string {
+    let background: string
+    switch (this.title.toLowerCase()) {
+      case &#x27;spider-man&#x27;: 
+        background &#x3D; &#x27;url(../assets/img/spidey.jpg) no-repeat right center / cover&#x27;
+        break
+      case &#x27;x-men&#x27;:
+        background &#x3D; &#x27;url(../assets/img/x.jpg) no-repeat center center / cover&#x27;
+        break
+      case &#x27;captain america&#x27;:
+        background &#x3D; &#x27;url(../assets/img/captain.jpg) no-repeat center center / cover&#x27;
+        break
+      case &#x27;iron man&#x27;:
+        background &#x3D; &#x27;url(../assets/img/iron.jpg) no-repeat center center / cover&#x27;
+        break
+      case &#x27;fantastic four&#x27;:
+        background &#x3D; &#x27;url(../assets/img/fantastic.jpg) no-repeat center center / cover&#x27;
+        break
+      case &#x27;hulk&#x27;:
+        background &#x3D; &#x27;url(../assets/img/hulk.jpg) no-repeat center 58% / cover&#x27;
+        break
+      case &#x27;black panther&#x27;:
+        background &#x3D; &#x27;url(../assets/img/panther.jpg) no-repeat center center / cover&#x27;
+        break
+    }
+    return background
+  }
+
+  onGetSuper(hero: string) : void {
+    this._marvelService.getSuper(hero.toLowerCase())
+    .subscribe(Super &#x3D;&gt; {
+      this.superData &#x3D; []
+
+      Super[&#x27;data&#x27;].results.map(data &#x3D;&gt; data.comics.items.map(comic &#x3D;&gt; this.superData.push(comic)))
+
+      this.dataSource &#x3D; new MatTableDataSource(this.superData)
+      this.dataSource.sort &#x3D; this.sort
+      this.dataSource.paginator &#x3D; this.paginator
+      }
+    )
+  }
+
+  openDialog(selectedComic: any) : void {
+    this._marvelService.getSuperDeets(selectedComic.resourceURI)
+      .subscribe(Deets &#x3D;&gt; {
+        this._dialog.open(ModalComponent, { 
+          data: Deets[&#x27;data&#x27;].results[0], 
+          width: &#x27;40vw&#x27; 
+        })
+      }
+    )
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-navbar (onSuperSelected)&#x3D;&quot;onSetTitle($event)&quot;&gt;&lt;/app-navbar&gt;
+&lt;div 
+  [ngStyle]&#x3D;&quot;{ background: onSetBackground() }&quot;
+  id&#x3D;&quot;main&quot; 
+&gt;
+  &lt;h1 
+    style&#x3D;&quot;text-align: center&quot; 
+    class&#x3D;&quot;{{ title[0] }}&quot;
+  &gt;{{ title }}&lt;/h1&gt;
+
+  &lt;div 
+    class&#x3D;&quot;mat-elevation-z8&quot; 
+    id&#x3D;&quot;table&quot;
+  &gt;
+    &lt;mat-table 
+      style&#x3D;&quot;margin: auto&quot; 
+      [dataSource]&#x3D;&quot;dataSource&quot;
+      class&#x3D;&quot;mat-elevation-z8&quot;
+      matSort
+    &gt;
+      &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+        &lt;mat-header-cell 
+            *matHeaderCellDef
+            mat-sort-header
+            class&#x3D;&quot;{{ title[0] }}&quot;
+          &gt;Name&lt;/mat-header-cell&gt;
+          &lt;mat-cell 
+            class&#x3D;&quot;{{ title[0] }}&quot;
+            *matCellDef&#x3D;&quot;let element&quot;
+          &gt;{{ element.name }}&lt;/mat-cell&gt;
+        &lt;/ng-container&gt;
+        
+        &lt;ng-container matColumnDef&#x3D;&quot;details&quot;&gt;
+          &lt;mat-header-cell 
+            *matHeaderCellDef
+            class&#x3D;&quot;{{ title[0] }}&quot;
+          &gt;Details&lt;/mat-header-cell&gt;
+          &lt;mat-cell 
+            class&#x3D;&quot;{{ title[0] }}&quot;
+            *matCellDef&#x3D;&quot;let element&quot;
+          &gt;&lt;button 
+            mat-button 
+            (click)&#x3D;&quot;openDialog(element)&quot;
+          &gt;Learn More&lt;/button&gt;&lt;/mat-cell&gt;
+      &lt;/ng-container&gt;
+
+      &lt;mat-header-row 
+        *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;
+      &gt;&lt;/mat-header-row&gt;
+      &lt;mat-row 
+        *matRowDef&#x3D;&quot;let row, columns: displayedColumns&quot;
+      &gt;&lt;/mat-row&gt;
+    &lt;/mat-table&gt;
+    
+    &lt;mat-paginator
+      class&#x3D;&quot;{{ title[0] }}&quot;
+      [pageSizeOptions]&#x3D;&quot;pageSizeOptions&quot;
+      showFirstLastButtons
+    &gt;&lt;/mat-paginator&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./app.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">mat-table {
+  font-family: var(--comicFont);
+  font-weight: bold;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+mat-header-cell {
+  font-size: 22pt;
+}
+
+mat-header-cell.S {
+  color: var(--spideyRed);
+  font-family: var(--spideyFont);
+}
+
+mat-header-cell.X {
+  color: var(--xBlue);
+  font-family: var(--xFont);
+}
+
+mat-header-cell.C {
+  color: var(--captainBlue);
+  font-family: var(--captainFont);
+}
+
+mat-header-cell.I {
+  color: var(--ironBlue);
+  font-family: var(--ironFont);
+}
+
+mat-header-cell.F {
+  color: var(--fantasticBlue);
+  font-family: var(--fantasticFont);
+}
+
+mat-header-cell.H {
+  color: var(--hulkGreen);
+  font-family: var(--hulkFont);
+}
+
+mat-header-cell.B {
+  color: var(--pantherPurple);
+  font-family: var(--pantherFont);
+}
+
+mat-cell {
+  font-size: 14pt;
+}
+
+mat-cell.S {
+  color: var(--spideyBlue);
+}
+
+mat-cell.X {
+  color: var(--xRed);
+}
+
+mat-cell.C {
+  color: var(--captainRed);
+}
+
+mat-cell.I {
+  color: var(--ironRed);
+}
+
+mat-cell.F {
+  color: var(--fantasticRed);
+}
+
+mat-cell.H {
+  color: var(--hulkPurple);
+}
+
+mat-cell.B {
+  color: var(--pantherBlack);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 30pt;
+}
+
+h1.S {
+  font-family: var(--spideyFont);
+  color: var(--spideyYellow);
+}
+
+h1.X {
+  font-family: var(--xFont);
+  color: var(--xBlue);
+  text-shadow: var(--xShadow);
+}
+
+h1.C {
+  font-family: var(--captainFont);
+  color: var(--captainRed);
+}
+
+h1.I {
+  font-family: var(--ironFont);
+  color: var(--ironRed);
+  text-shadow: var(--ironOutline);
+}
+
+h1.F {
+  font-family: var(--fantasticFont);
+  color: var(--fantasticWhite);
+}
+
+h1.H {
+  font-family: var(--hulkFont);
+  color: var(--hulkYellow);
+}
+
+h1.B {
+  font-family: var(--pantherFont);
+  color: var(--pantherPurple);
+  text-shadow: var(--pantherShadow);
+}
+
+button, mat-paginator {
+  font-family: var(--comicFont);
+}
+
+button {
+  font-size: 14pt;
+}
+
+mat-paginator {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+mat-paginator.S {
+  color: var(--spideyYellow);
+}
+
+mat-paginator.X {
+  color: var(--xYellow);
+}
+
+mat-paginator.C {
+  color: var(--captainWhite);
+}
+
+mat-paginator.I {
+  color: var(--ironYellow);
+}
+
+mat-paginator.F {
+  color: var(--fantasticBlue);
+}
+
+mat-paginator.H {
+  color: var(--hulkPurple);
+}
+
+mat-paginator.B {
+  color: var(--pantherRed);
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  padding-top: 8vh;
+  height: 92vh;
+  width: 100vw;
+}
+
+#table {
+  width: 40vw;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1100px) {
+  #table {
+    width: 100vw;
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-navbar (onSuperSelected)="onSetTitle($event)"></app-navbar><div   [ngStyle]="{ background: onSetBackground() }"  id="main" >  <h1     style="text-align: center"     class="{{ title[0] }}"  >{{ title }}</h1>  <div     class="mat-elevation-z8"     id="table"  >    <mat-table       style="margin: auto"       [dataSource]="dataSource"      class="mat-elevation-z8"      matSort    >      <ng-container matColumnDef="name">        <mat-header-cell             *matHeaderCellDef            mat-sort-header            class="{{ title[0] }}"          >Name</mat-header-cell>          <mat-cell             class="{{ title[0] }}"            *matCellDef="let element"          >{{ element.name }}</mat-cell>        </ng-container>                <ng-container matColumnDef="details">          <mat-header-cell             *matHeaderCellDef            class="{{ title[0] }}"          >Details</mat-header-cell>          <mat-cell             class="{{ title[0] }}"            *matCellDef="let element"          ><button             mat-button             (click)="openDialog(element)"          >Learn More</button></mat-cell>      </ng-container>      <mat-header-row         *matHeaderRowDef="displayedColumns"      ></mat-header-row>      <mat-row         *matRowDef="let row, columns: displayedColumns"      ></mat-row>    </mat-table>        <mat-paginator      class="{{ title[0] }}"      [pageSizeOptions]="pageSizeOptions"      showFirstLastButtons    ></mat-paginator>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'NavbarComponent', 'selector': 'app-navbar'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AppComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

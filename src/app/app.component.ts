@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource, MatSort, MatDialog, MatPaginator } from '@angular/material';
 import { ModalComponent } from './modal/modal.component';
 import { MarvelService } from './marvel.service';
@@ -10,7 +10,7 @@ import { TableModel } from './table.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title: string =  'Spider-Man'.toUpperCase()
+  title: string =  'SPIDER-MAN'
   displayedColumns: string[] = ['name', 'details']
   superData: TableModel[] = []
   dataSource: any
@@ -75,7 +75,7 @@ export class AppComponent implements OnInit {
     )
   }
 
-  openDialog(selectedComic) {
+  openDialog(selectedComic: any) : void {
     this._marvelService.getSuperDeets(selectedComic.resourceURI)
       .subscribe(Deets => {
         this._dialog.open(ModalComponent, { 

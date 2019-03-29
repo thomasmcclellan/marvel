@@ -20,7 +20,7 @@ button {
 #X {
   font-family: var(--xFont);
   color: var(--xBlue);
-  text-shadow: 1px 1px 0 var(--xYellow);
+  text-shadow: var(--xShadow);
 }
 
 #C {
@@ -31,11 +31,7 @@ button {
 #I {
   font-family: var(--ironFont);
   color: var(--ironRed); 
-  text-shadow:
-    -0.5px -0.5px 0 var(--ironYellow),
-    0.5px -0.5px 0 var(--ironYellow),
-    -0.5px 0.5px 0 var(--ironYellow),
-    0.5px 0.5px 0 var(--ironYellow); 
+  text-shadow: var(--ironOutline);
 }
 
 #F {
@@ -51,5 +47,5 @@ button {
 #B {
   font-family: var(--pantherFont);
   color: var(--pantherPurple); 
-  text-shadow: 1px 1px 1px var(--pantherBlack);
+  text-shadow: var(--pantherShadow);
 }
